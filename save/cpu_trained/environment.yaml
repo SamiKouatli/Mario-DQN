@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT
+
+# Environment hyperparameters.
+
+# Constants relative to the game environment, based on game documentation.
+game:
+  # Environment used by gym-super-mario-bros. Follow this template SuperMarioBros-<world>-<stage>-v<version>.
+  # World is a number between 1 and 8. Stage is a number between 1 and 4. Version is a number between 1 and 4.
+  # Ignore warning saying environment is out of date, version does not refer to environment version but ROM used.
+  env: "SuperMarioBros-1-1-v0"
+  # Game frame dimensions.
+  frame:
+    width: 256
+    height: 240
+    color_channel: 3
+
+# Target size of width and height dimension.
+downscale_size: 84
+
+# Frame needs to be cropped. Cropped constants in each direction.
+crop:
+  left: 0
+  right: 0
+  up: 18
+  down: 8
+
+# To limit the number of steps, each action is replayed several over several frames. This is the number of frame skipped.
+skip_nb: 4
+
+# We stack several frames in a circular buffer to give a sense motion to the NN.
+buffer_size: 4
+
+# Max pixel value.
+pixel_max: 255
+
+# Period at which we record episodes.
+episodes_recorded_each: 50

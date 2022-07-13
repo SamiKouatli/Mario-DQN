@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# TensorFlow is Google's open source machine learning framework.
+tensorflow = "*"
+# NumPy is the fundamental package for array computing with Python.
+numpy = "*"
+# NES Emulator with OpenAI Gym interface
+nes-py = "*"
+# Gym: A universal API for reinforcement learning environments
+gym = "*"
+# Super Mario Bros. for OpenAI Gym
+gym-super-mario-bros = "*"
+# Wrapper package for OpenCV (computer vision) python bindings
+opencv-python = "*"
+# YAML parser and emitter for Python
+PyYAML = "*"
+# Image processing in Python
+scikit-image = "*"
+# Fast, Extensible Progress Meter
+tqdm = "*"
+# Python command-line parsing library
+argparse = "*"
+# FFMPEG wrapper for Python
+imageio-ffmpeg = "*"
+
+[dev-packages]
+# Static code analyzer
+pylint = "*"
+# Python plotting package
+matplotlib = "*"
+
+[requires]
+python_version = "3.10"

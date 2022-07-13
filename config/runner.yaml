@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: MIT
+
+# Execution hyperparameters.
+
+# Maximum experience saved in experience replay memory.
+max_memory_size: 30000
+
+# Batch size.
+batch_size: 64
+
+# Number of episodes to run in training.
+num_episodes: 2500
+
+# Discount factor (gamma), quantifies how much importance we give for future rewards.
+gamma: 0.90
+
+# Learning rate (alpha), used to tune how accurately a model converges on a result.
+learning_rate: 0.00025
+
+# Exploration rate (epsilon) controls how much the agent should explore and exploit.
+# Exploration maximum value.
+exploration_max: 1.0
+# Exploration minimum value.
+exploration_min: 0.02
+# Exploration (epsilon) decay rate.
+exploration_decay: 0.99
+
+# Score uses a circular buffer and averages scores over these episodes.
+score_buffer_size: 10
